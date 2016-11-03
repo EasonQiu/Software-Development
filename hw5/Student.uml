@@ -3,14 +3,23 @@
   <ID>JAVA</ID>
   <OriginalElement>Student</OriginalElement>
   <nodes>
-    <node x="-179.0" y="-209.0">Student</node>
+    <node x="65.5" y="624.0">MsStudent</node>
+    <node x="135.0" y="0.0">People</node>
+    <node x="0.0" y="146.0">Student</node>
   </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="41.0" y="15.0" />
-  <SelectedNodes>
-    <node>Student</node>
-  </SelectedNodes>
+  <edges>
+    <edge source="Student" target="People">
+      <point x="0.0" y="-214.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="MsStudent" target="Student">
+      <point x="0.0" y="-137.0" />
+      <point x="0.0" y="214.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="41.857142857142776" y="435.99999999999994" />
+  <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

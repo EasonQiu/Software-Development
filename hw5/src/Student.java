@@ -1,6 +1,6 @@
 import com.sun.tools.corba.se.idl.StringGen;
 
-public class Student {
+public class Student implements People {
     private String name, phone, address, department;
     private int id, age;
 
@@ -12,23 +12,18 @@ public class Student {
     public String getName(){
         return name;
     }
-
     public int getId(){
         return id;
     }
-
     String getAddress(){
         return address;
     }
-
     protected String getPhone(){
         return phone;
     }
-
     public int getAge(){
         return age;
     }
-
     public String getDepartment(){
         return department;
     }
@@ -36,15 +31,12 @@ public class Student {
     void setAddress(String address){
         this.address = address;
     }
-
     protected void setPhone(String phone){
         this.phone = phone;
     }
-
     public void setAge(int age){
         this.age = age;
     }
-
     public void setDepartment(String department){
         this.department = department;
     }
@@ -57,5 +49,4 @@ public class Student {
         System.out.println("Age: " + age);
         System.out.println("Department: " + department);
     }
-
 }
