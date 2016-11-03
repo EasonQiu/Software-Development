@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_hw5_java" default="compile.module.hw5_java">
+  <dirname property="module.hw5_java.basedir" file="${ant.file.module_hw5_java}"/>
+  
+  <property name="module.jdk.home.hw5_java" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.hw5_java" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.hw5_java" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.hw5_java" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="hw5_java.output.dir" value="${module.hw5_java.basedir}/out/production/hw5_Java"/>
+  <property name="hw5_java.testoutput.dir" value="${module.hw5_java.basedir}/out/test/hw5_Java"/>
+  
+  <path id="hw5_java.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="hw5_java.module.production.classpath">
+    <path refid="${module.jdk.classpath.hw5_java}"/>
+  </path>
+  
+  <path id="hw5_java.runtime.production.module.classpath">
+    <pathelement location="${hw5_java.output.dir}"/>
+  </path>
+  
+  <path id="hw5_java.module.classpath">
+    <path refid="${module.jdk.classpath.hw5_java}"/>
+    <pathelement location="${hw5_java.output.dir}"/>
+  </path>
+  
+  <path id="hw5_java.runtime.module.classpath">
+    <pathelement location="${hw5_java.testoutput.dir}"/>
+    <pathelement location="${hw5_java.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.hw5_java">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.hw5_java">
+    <patternset refid="excluded.from.module.hw5_java"/>
+  </patternset>
+  
+  <path id="hw5_java.module.sourcepath">
+    <dirset dir="${module.hw5_java.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.hw5_java" depends="compile.module.hw5_java.production,compile.module.hw5_java.tests" description="Compile module hw5_Java"/>
+  
+  <target name="compile.module.hw5_java.production" depends="register.custom.compilers" description="Compile module hw5_Java; production classes">
+    <mkdir dir="${hw5_java.output.dir}"/>
+    <javac2 destdir="${hw5_java.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.hw5_java}/javac">
+      <compilerarg line="${compiler.args.hw5_java}"/>
+      <bootclasspath refid="hw5_java.module.bootclasspath"/>
+      <classpath refid="hw5_java.module.production.classpath"/>
+      <src refid="hw5_java.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.hw5_java"/>
+    </javac2>
+    
+    <copy todir="${hw5_java.output.dir}">
+      <fileset dir="${module.hw5_java.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.hw5_java.tests" depends="register.custom.compilers,compile.module.hw5_java.production" description="compile module hw5_Java; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.hw5_java" description="cleanup module">
+    <delete dir="${hw5_java.output.dir}"/>
+    <delete dir="${hw5_java.testoutput.dir}"/>
+  </target>
+</project>
