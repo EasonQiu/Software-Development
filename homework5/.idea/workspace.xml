@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b44090b0-8711-448d-b532-54de73207e88" name="Default" comment="initial version">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="b44090b0-8711-448d-b532-54de73207e88" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homework5.iws" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -724,7 +723,7 @@
       <updated>1478218240547</updated>
       <workItem from="1478218242346" duration="236000" />
       <workItem from="1478218845671" duration="2937000" />
-      <workItem from="1478222382339" duration="2605000" />
+      <workItem from="1478222382339" duration="2667000" />
     </task>
     <task id="LOCAL-00001" summary="initial version">
       <created>1478219648965</created>
@@ -733,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478219648965</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish ant build">
+      <created>1478225328889</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478225328889</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -751,7 +757,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5778000" />
+    <option name="totallyTimeSpent" value="5840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="42" y="23" width="1238" height="777" extended-state="6" />
@@ -817,7 +823,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial version" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial version" />
+    <MESSAGE value="finish ant build" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish ant build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1010,8 +1017,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

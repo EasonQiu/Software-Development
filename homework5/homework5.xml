@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="homework5" default="run">
+
+    <target name="run" depends="compile">
+        <java classname="Main">
+            <classpath path="out/ant" />
+        </java>
+    </target>
+
+    <target name="compile">
+        <javac includeantruntime="false" srcdir="./src" destdir="out/ant"/>
+    </target>
+
+</project>
