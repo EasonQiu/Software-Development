@@ -1,4 +1,10 @@
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.config.properties.PropertiesConfiguration;
+
 public class Main {
+
+    private static final Logger log = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
         Student Eason = new Student(1, "Eason");
@@ -19,6 +25,13 @@ public class Main {
         Lily.setTuition(68770);
         Lily.printStudentInfo();
         System.out.println();
+
+        log.debug("Debugging Message");
+        log.info("Informational Message");
+        log.warn("Warning Message");
+        log.error("Error Message");
+        log.fatal("Fatal Message");
+
     }
 
 }
