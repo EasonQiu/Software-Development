@@ -1,5 +1,3 @@
-import com.sun.tools.corba.se.idl.StringGen;
-
 public class Student implements People {
     private String name, phone, address, department;
     private int id, age;
