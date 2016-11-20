@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Undergraduates</OriginalElement>
+  <nodes>
+    <node x="2540.5" y="1312.0">Faculty</node>
+    <node x="-34.5" y="626.5">PhDs</node>
+    <node x="1005.5" y="-13.5">Undergraduates</node>
+    <node x="1175.5" y="1473.5">Staff</node>
+    <node x="485.5" y="346.5">Graduates</node>
+    <node x="2375.5" y="713.5">Professors</node>
+    <node x="1091.0" y="803.0">StudentsFactory</node>
+    <node x="1775.5" y="1113.5">Lectures</node>
+    <node x="1891.0" y="803.0">AbstractFactory</node>
+    <node x="1106.0" y="934.0">FactoryProducer</node>
+    <node x="620.5" y="152.0">Students</node>
+    <node x="1891.0" y="923.0">FacultyFactory</node>
+    <node x="-4.5" y="2014.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Undergraduates" target="Students">
+      <point x="-234.5" y="0.0" />
+      <point x="99.5" y="0.0" />
+    </edge>
+    <edge source="Lectures" target="Faculty">
+      <point x="264.5" y="0.0" />
+      <point x="-99.5" y="0.0" />
+    </edge>
+    <edge source="FacultyFactory" target="Lectures">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="FacultyFactory" target="Staff">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="FactoryProducer" target="StudentsFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="StudentsFactory" target="AbstractFactory">
+      <point x="149.0" y="0.0" />
+      <point x="-149.0" y="0.0" />
+    </edge>
+    <edge source="Graduates" target="Students">
+      <point x="0.0" y="-213.5" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="StudentsFactory" target="PhDs">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="StudentsFactory" target="Graduates">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Professors" target="Faculty">
+      <point x="0.0" y="246.5" />
+      <point x="0.0" y="-48.0" />
+    </edge>
+    <edge source="PhDs" target="Students">
+      <point x="0.0" y="-213.5" />
+      <point x="200.0" y="200.0" />
+      <point x="-99.5" y="0.0" />
+    </edge>
+    <edge source="Staff" target="Faculty">
+      <point x="264.5" y="0.0" />
+      <point x="2640.0" y="1720.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="StudentsFactory" target="Undergraduates">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="FactoryProducer" target="FacultyFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="FacultyFactory" target="AbstractFactory">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="FacultyFactory" target="Professors">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="1748.7499999999995" y="1137.4999999999998" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>FilterDemo</OriginalElement>
+  <nodes>
+    <node x="275.5" y="294.0">CriteriaEurope</node>
+    <node x="345.5" y="43.0">FilterDemo</node>
+    <node x="1035.5" y="174.0">CriteriaAmerica</node>
+    <node x="1906.0" y="271.5">AndCriteria</node>
+    <node x="-24.5" y="-34.5">Country</node>
+    <node x="1475.5" y="294.0">Criteria</node>
+    <node x="595.5" y="174.0">CriteriaAsia</node>
+    <node x="1475.5" y="54.0">CriteriaGDP</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="FilterDemo" target="CriteriaAmerica">
+      <point x="94.5" y="13.333333333333343" />
+      <point x="1200.0" y="93.33333333333334" />
+      <point x="0.0" y="-26.0" />
+    </edge>
+    <edge source="FilterDemo" target="Country">
+      <point x="-94.5" y="0.0" />
+      <point x="144.5" y="0.0" />
+    </edge>
+    <edge source="AndCriteria" target="Criteria">
+      <point x="0.0" y="48.5" />
+      <point x="2000.0" y="440.0" />
+      <point x="1640.0" y="440.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="FilterDemo" target="AndCriteria">
+      <point x="0.0" y="-37.0" />
+      <point x="440.0" y="0.0" />
+      <point x="2000.0" y="0.0" />
+      <point x="0.0" y="-48.5" />
+    </edge>
+    <edge source="CriteriaAsia" target="Criteria">
+      <point x="0.0" y="26.0" />
+      <point x="760.0" y="306.6666666666667" />
+      <point x="-164.5" y="-13.333333333333314" />
+    </edge>
+    <edge source="CriteriaGDP" target="Criteria">
+      <point x="0.0" y="26.0" />
+      <point x="0.0" y="-26.0" />
+    </edge>
+    <edge source="FilterDemo" target="CriteriaEurope">
+      <point x="0.0" y="37.0" />
+      <point x="0.0" y="-26.0" />
+    </edge>
+    <edge source="FilterDemo" target="CriteriaAsia">
+      <point x="94.5" y="26.666666666666657" />
+      <point x="760.0" y="106.66666666666666" />
+      <point x="0.0" y="-26.0" />
+    </edge>
+    <edge source="CriteriaAmerica" target="Criteria">
+      <point x="164.5" y="0.0" />
+      <point x="1600.0" y="200.0" />
+      <point x="-40.0" y="-26.0" />
+    </edge>
+    <edge source="CriteriaEurope" target="Criteria">
+      <point x="164.5" y="0.0" />
+      <point x="-164.5" y="0.0" />
+    </edge>
+    <edge source="FilterDemo" target="CriteriaGDP">
+      <point x="94.5" y="0.0" />
+      <point x="-164.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="1241.5" y="215.0" />
+  <SelectedNodes>
+    <node>FilterDemo</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
