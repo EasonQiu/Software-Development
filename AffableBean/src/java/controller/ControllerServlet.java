@@ -96,7 +96,7 @@ public class ControllerServlet extends HttpServlet {
 
                 // get all products for selected category
                 categoryProducts = selectedCategory.getProductCollection();
-
+                
                 // place category products in session scope
                 session.setAttribute("categoryProducts", categoryProducts);
             }
