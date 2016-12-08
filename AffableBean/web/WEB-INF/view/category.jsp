@@ -26,6 +26,7 @@
                 <div class="categoryButton" id="selectedCategory">
                     <span class="categoryText">
                         <fmt:message key="${category.name}"/>
+                        <!--${category.name}-->
                     </span>
                 </div>
             </c:when>
@@ -33,6 +34,7 @@
                 <a href="<c:url value='category?${category.id}'/>" class="categoryButton">
                     <span class="categoryText">
                         <fmt:message key="${category.name}"/>
+                        <!--${category.name}-->
                     </span>
                 </a>
             </c:otherwise>
@@ -44,7 +46,10 @@
 
 <div id="categoryRightColumn">
 
-    <p id="categoryTitle"><fmt:message key="${selectedCategory.name}" /></p>
+<!--    <p id="categoryTitle">
+        <%--<fmt:message key="${selectedCategory.name}" />--%>
+        ${selectedCategory.name}
+    </p>-->
 
     <table id="productTable">
 
@@ -57,9 +62,13 @@
                 </td>
 
                 <td>
-                    <fmt:message key="${product.name}"/>
+                    <%--<fmt:message key="${product.name}"/>--%>
+                    ${product.name}
                     <br>
-                    <span class="smallText"><fmt:message key='${product.name}Description'/></span>
+                    <span class="smallText">
+                        <fmt:message key='${product.name}Description'/>
+                        <!--${product.name}-->
+                    </span>
                 </td>
 
                 <td><fmt:formatNumber type="currency" currencySymbol="&#36; " value="${product.price}"/></td>

@@ -16,7 +16,7 @@
 
 
 <%-- HTML markup starts below --%>
-
+<div id="poster"></div>
 <div id="indexLeftColumn">
     <div id="welcomeText">
         <p style="font-size: larger"><fmt:message key='greeting' /></p>
@@ -30,9 +30,9 @@
         <div class="categoryBox">
             <a href="<c:url value='category?${category.id}'/>">
                 <span class="categoryLabel"></span>
-                <span class="categoryLabelText"><fmt:message key='${category.name}'/></span>
+                <!--<span class="categoryLabelText"><fmt:message key='${category.name}'/></span>-->
 
-                <img src="${initParam.categoryImagePath}${category.name}.jpg"
+                <img src="${initParam.categoryImagePath}${category.name}.png"
                      alt="<fmt:message key='${category.name}'/>" class="categoryImage">
             </a>
         </div>
