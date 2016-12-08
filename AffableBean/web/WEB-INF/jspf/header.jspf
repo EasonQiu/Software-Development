@@ -25,8 +25,9 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/AffableBean/css/affablebean.css">
-        <link rel="shortcut icon" href="/AffableBean/img/favicon.ico">
-
+        <!--<link rel="shortcut icon" href="/AffableBean/img/favicon.ico">-->
+        <link rel="shortcut icon" hred="/AffableBean/img/oldPic/logo.png">
+        
         <script src="/AffableBean/js/jquery-1.4.2.js" type="text/javascript"></script>
         <script src="/AffableBean/js/jquery-ui-1.8.4.custom.min.js" type="text/javascript"></script>
 
@@ -59,8 +60,8 @@
 
     <body>
         <div id="main">
-            <div id="header">
-                <div id="widgetBar">
+          <div id="header">
+            <div id="widgetBar">
 
                   <div class="headerWidget">
 
@@ -225,13 +226,12 @@
                     </c:if>
                   </div>
                 </div>
-
-                <a href="<c:url value='/'/>">
-                    <%--<img src="/AffableBean/img/logo.png" id="logo" alt="Affable Bean logo">--%>
-                    <%--<img src="/AffableBean/img/logoText.png" id="logoText" alt="BeautyX Skincare">--%>
-                    <p><font size="36">BeautyX Skincare</font></p>
-                </a>
-
-                <%--<img src="/AffableBean/img/logoText.png" id="logoText" alt="BeautyX Skincare">--%>
-                
+            <div id = "header_title">
+                    <a href="<c:url value='/'/>">
+                        <%--<img src="/AffableBeanimg/logo.png" id="logo" alt="Affable Bean logo">--%>
+                        <%--<img src="/AffableBean/img/logoText.png" id="logoText" alt="BeautyX Skincare">--%>
+                        <!--<p><font size="36">MOVIE WORLD</font></p>-->
+                        <p><font size="36"> <fmt:message key='title' /></font></p>
+                    </a>
             </div>
+        </div>
