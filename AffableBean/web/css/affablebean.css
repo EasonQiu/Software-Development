@@ -34,7 +34,7 @@ table {
 
 a {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover { text-decoration: none }
@@ -159,9 +159,9 @@ label.error {
     margin-right: 5px
 }
 
-#viewCart {
+/*#viewCart {
     width: 110px;
-}
+}*/
 
 .headerWidget {
     margin-top: 10px;
@@ -247,6 +247,7 @@ label.error {
     float: left;
     margin-top: 25px;
     padding-left: 15px;
+    color: #fff;
 }
 
 #categoryRightColumn {
@@ -259,12 +260,12 @@ label.error {
     margin: 15px 22px;
     padding: 13px;
     display: block;
-    background-color: #E4EDEA;
+    background-color: rgb(249, 188, 182);
     border-radius: 4px;
 }
 
 #selectedCategory {
-    background-color: #BDB9CF;
+    background-color: #e65744;
     margin-left: 10px;
     width: 139px;
 }

@@ -34,8 +34,8 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 $('a.categoryButton').hover(
-                    function () {$(this).animate({backgroundColor: '#b2d2d2'})},
-                    function () {$(this).animate({backgroundColor: '#d3ede8'})}
+                    function () {$(this).animate({backgroundColor: 'rgb(229, 121, 117)'})},
+                    function () {$(this).animate({backgroundColor: 'rgb(249, 188, 182)'})}
                 );
 
                 $('div.categoryBox').hover(over, out);
